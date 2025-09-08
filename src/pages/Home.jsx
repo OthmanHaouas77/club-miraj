@@ -21,32 +21,36 @@ function Home() {
                         backgroundPosition: 'center 70%',
                     }}
                 />
-               <div
-  className={`relative z-20 max-w-6xl mx-auto py-24 px-6 text-center transition-all duration-1000 ${
-    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-  }`}
+    <div
+    className={`relative z-20 max-w-6xl mx-auto py-24 px-6 text-center transition-all duration-1000 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+    }`}
 >
-  <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-    Bienvenue au <span className="text-teal-400 font-extrabold">Club Miraj</span>
-  </h1>
-  <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-    Votre oasis de bien-être: fitness moderne, hammam traditionnel et spa luxueux
-  </p>
+    <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+        Bienvenue au <span className="text-teal-400 font-extrabold">Club Miraj</span>
+    </h1>
+    <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+        Votre oasis de bien-être: fitness moderne, hammam traditionnel et spa luxueux
+    </p>
 
-  <Link
-    to="/Planning"
-    className="inline-block bg-teal-600 hover:bg-teal-500 text-white px-10 py-4 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 font-bold text-xl"
-  >
-    Planning du Club
-  </Link>
-
-  <Link
-    to="/Spa"
-    className="inline-block ml-4 bg-teal-600 hover:bg-teal-500 text-white px-10 py-4 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 font-bold text-xl"
-  >
-    Spa
-  </Link>
+    {/* Container des deux boutons */}
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+        <Link
+            to="/Planning"
+            className="bg-teal-600 hover:bg-teal-500 text-white px-10 py-4 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 font-bold text-xl"
+        >
+            Planning
+        </Link> 
+        
+        <Link
+            to="/Spa"
+            className="bg-teal-600 hover:bg-teal-500 text-white px-10 py-4 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 font-bold text-xl"
+        >
+            Spa
+        </Link>
+    </div>
 </div>
+
 
             </div>
 

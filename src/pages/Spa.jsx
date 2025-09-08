@@ -142,6 +142,14 @@ function Spa() {
                                 >
                                     Réserver
                                 </button>
+                                <div className="fixed bottom-6 right-6 z-50 md:hidden">
+    <a
+        href="tel:+212653269113"
+        className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-xl font-semibold text-lg transition-colors"
+    >
+        📞 Call
+    </a>
+</div>
                             </div>
                         </div>
                     ))}
