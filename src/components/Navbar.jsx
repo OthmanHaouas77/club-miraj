@@ -67,18 +67,16 @@ function Navbar() {
             </div>
 
             {/* Mobile menu */}
-           {/* Mobile menu */}
-{isMobileOpen && (
-    <div className="lg:hidden mt-2 mx-4 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 shadow-lg">
-        <div className="flex flex-col space-y-2 px-6 py-4">
-            <MobileNavLink to="/" label="Accueil" onClick={() => setIsMobileOpen(false)} />
-            <MobileNavLink to="/spa" label="Spa" onClick={() => setIsMobileOpen(false)} />
-            <MobileNavLink to="/planning" label="Planning" onClick={() => setIsMobileOpen(false)} />
-            <MobileNavLink to="/contact" label="Contact" onClick={() => setIsMobileOpen(false)} />
-        </div>
-    </div>
-)}
-
+            {isMobileOpen && (
+                <div className="lg:hidden mt-2 px-6 pb-4">
+                    <div className="flex flex-col space-y-2">
+                        <MobileNavLink to="/" label="Accueil" onClick={() => setIsMobileOpen(false)} />
+                        <MobileNavLink to="/spa" label="Spa" onClick={() => setIsMobileOpen(false)} />
+                        <MobileNavLink to="/planning" label="Planning" onClick={() => setIsMobileOpen(false)} />
+                        <MobileNavLink to="/contact" label="Contact" onClick={() => setIsMobileOpen(false)} />
+                    </div>
+                </div>
+            )}
         </nav>
     );
 }
