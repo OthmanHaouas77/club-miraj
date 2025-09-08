@@ -39,7 +39,7 @@ const scheduleData = [
         coach: "Coach Amine",
         type: "Mixte",
         class: "Taebo",
-        times: { mardi: "22H", jeudi: "22H", samedi: "22H" }
+        times: { mardi: "20H", jeudi: "20H", samedi: "20H" }
     }
 ];
 
