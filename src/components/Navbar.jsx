@@ -54,7 +54,7 @@ function Navbar() {
                 <div className="flex items-center">
                     <button
                         onClick={() => setIsMobileOpen(!isMobileOpen)}
-                        className="lg:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                        className="lg:hidden inline-flex items-center justify-center p-2 rounded-md bg-teal-600 hover:bg-teal-500 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
                         aria-expanded={isMobileOpen}
                         aria-label="Toggle navigation"
                     >

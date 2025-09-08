@@ -44,14 +44,12 @@ function Spa() {
                                 +212 6 53 26 91 13
                             </span>
                         </p>
-                        <div className="fixed bottom-6 right-6 z-50 md:hidden">
-    <a
+                        <a
         href="tel:+212653269113"
         className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-xl font-semibold text-lg transition-colors"
     >
         📞 Call
     </a>
-</div>
                         <button
                             onClick={() => setShowPopup(false)}
                             className="bg-rose-700 hover:bg-rose-800 text-white px-4 py-2 rounded-lg transition-colors"
