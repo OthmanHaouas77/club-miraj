@@ -21,7 +21,7 @@ function Navbar() {
 
     return (
         <nav className={`fixed top-0 left-0 w-full py-3 px-6 z-50 transition-all duration-300 ${
-            scrolled
+             scrolled || isMobileOpen
                 ? 'bg-black/90 backdrop-blur-md border-b border-white/10 shadow-xl'
                 : 'bg-transparent'
         }`}>
