@@ -187,8 +187,8 @@ function Contact() {
                         </div>
 
                         {/* Contact Form */}
-                        <div className="bg-gradient-to-br from-white to-teal-100 rounded-xl p-5 border border-rose-100 shadow-lg transform transition-transform hover:scale-105">
-                            <h2 className="text-2xl font-bold text-indigo-800 mb-6 flex items-center">
+                        <div className="bg-gray-900 text-white rounded-xl p-5 border border-rose-100 shadow-lg transform transition-transform hover:scale-105 md:bg-gradient-to-br md:from-white md:to-teal-100 md:text-inherit md:border-rose-100">
+                            <h2 className="text-2xl font-bold text-indigo-200 md:text-indigo-800 mb-6 flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
@@ -198,49 +198,49 @@ function Contact() {
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
-                                        <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Nom complet</label>
+                                        <label htmlFor="name" className="block text-white md:text-gray-700 font-medium mb-2">Nom complet</label>
                                         <input
                                             type="text"
                                             id="name"
                                             value={form.name}
                                             onChange={handleChange}
-                                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                                            className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition md:bg-white md:text-gray-900 md:border-gray-300 md:placeholder-gray-500"
                                             placeholder="Votre nom"
                                         />
                                     </div>
                                     <div>
-                                        <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
+                                        <label htmlFor="email" className="block text-white md:text-gray-700 font-medium mb-2">Email</label>
                                         <input
                                             type="email"
                                             id="email"
                                             value={form.email}
                                             onChange={handleChange}
-                                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                                            className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition md:bg-white md:text-gray-900 md:border-gray-300 md:placeholder-gray-500"
                                             placeholder="votre@email.com"
                                         />
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">Sujet</label>
+                                    <label htmlFor="subject" className="block text-white md:text-gray-700 font-medium mb-2">Sujet</label>
                                     <input
                                         type="text"
                                         id="subject"
                                         value={form.subject}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition md:bg-white md:text-gray-900 md:border-gray-300 md:placeholder-gray-500"
                                         placeholder="Sujet de votre message"
                                     />
                                 </div>
 
                                 <div>
-                                    <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
+                                    <label htmlFor="message" className="block text-white md:text-gray-700 font-medium mb-2">Message</label>
                                     <textarea
                                         id="message"
                                         rows="5"
                                         value={form.message}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition md:bg-white md:text-gray-900 md:border-gray-300 md:placeholder-gray-500"
                                         placeholder="Votre message..."
                                     ></textarea>
                                 </div>
@@ -256,8 +256,8 @@ function Contact() {
                                 </div>
 
                                 {/* Feedback minimal (n'affecte pas le contenu existant) */}
-                                {success && <div className="text-green-600 font-medium">{success}</div>}
-                                {error && <div className="text-rose-600 font-medium">{error}</div>}
+                                {success && <div className="text-green-300 md:text-green-600 font-medium">{success}</div>}
+                                {error && <div className="text-rose-300 md:text-rose-600 font-medium">{error}</div>}
                             </form>
                         </div>
                     </div>
